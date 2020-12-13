@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import suryansh from "./Planightsources/suryansh.png";
+import Nath from "./Planightsources/nath.png";
+import Planight from "./Planightsources/Planight.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Pavbar from "./Components/Pavbar";
+import PlanightHeaderImage from "./Components/PlanightHeaderImage";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Card, Button } from "react-bootstrap";
+import ImageCard from "./Components/ImageCard";
+import Paragraph from "./Components/Paragraph";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <Pavbar></Pavbar>
+      {/* <PlanightHeaderImage />*/}
+      <div className="main__header">
+        {/* <img width="500" height="200" src={Planight} alt="" />*/}
+      </div>
+      <div className="main__title">
+      
+        <h1>Welcome to planight</h1>
+      </div>
+      <div className="row">
+        <ImageCard
+          className="column"
+          image={suryansh}
+          title={"Developer"}
+          content={"I am the main Developer at planight"}
+        />
+        <ImageCard
+          className="column"
+          image={Nath}
+          title={"Ceo"}
+          content={"I am the CEO of Planight"}
+        />
+      </div>
+      <div>
+        <Paragraph />
+        <Paragraph />
+        <Paragraph />
+        <Paragraph />
+      </div>
     </div>
   );
 }
