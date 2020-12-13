@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container } from "react-bootstrap";
-
+import "../styles/Pavbar.css";
 function Pavbar() {
   return (
     <div>

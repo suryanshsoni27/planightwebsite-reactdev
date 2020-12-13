@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Button } from "react-bootstrap";
 import ImageCard from "./Components/ImageCard";
 import Paragraph from "./Components/Paragraph";
+import Header from "./Components/Header";
+import Carmove from "./Components/Carmove";
 
 function App() {
   return (
@@ -20,9 +22,13 @@ function App() {
         {/* <img width="500" height="200" src={Planight} alt="" />*/}
       </div>
       <div className="main__title">
-      
-        <h1>Welcome to planight</h1>
+        <Header></Header>
       </div>
+
+      <div>
+        <Carmove />
+      </div>
+
       <div className="row">
         <ImageCard
           className="column"
@@ -37,6 +43,7 @@ function App() {
           content={"I am the CEO of Planight"}
         />
       </div>
+
       <div>
         <Paragraph />
         <Paragraph />

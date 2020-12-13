@@ -2,6 +2,7 @@ import React from "react";
 import { Image } from "react-bootstrap";
 import Planight from "../Planightsources/Planight.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/PlanightHeaderImage.css";
 
 function PlanightHeaderImage() {
   return (
