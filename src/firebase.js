@@ -8,8 +8,8 @@ const firebaseConfig = {
   projectId: "planightios",
   storageBucket: "planightios.appspot.com",
   messagingSenderId: "1008305946817",
-  appId: "1:1008305946817:web:a669ce286e6bd5be9e9440",
-  measurementId: "G-559WSGJJ4L",
+  appId: "1:1008305946817:web:3b1a73e655b3cc5c9e9440",
+  measurementId: "G-M57WWG9D8F",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

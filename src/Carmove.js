@@ -2,14 +2,14 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import "holderjs";
-import Planight from "../Planightsources/Planight.png";
-import "../styles/Carmove.css";
+import Planight from "./Planightsources/Planight.png";
+import "./styles/Carmove.css";
 
 function Carmove() {
   return (
-    <div>
-      <Carousel>
-        <Carousel.Item interval={1000}>
+    <div className="car">
+      <Carousel className="row text-center">
+        <Carousel.Item interval={1000} className="column">
           <img className="center-block w-50" src={Planight} alt="First slide" />
           <Carousel.Caption>
             <h3>Our Website</h3>

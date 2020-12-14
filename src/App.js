@@ -2,28 +2,30 @@ import "./App.css";
 import React from "react";
 import suryansh from "./Planightsources/suryansh.png";
 import Nath from "./Planightsources/nath.png";
-import Planight from "./Planightsources/Planight.png";
+// import Planight from "./Planightsources/Planight.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Pavbar from "./Components/Pavbar";
-import PlanightHeaderImage from "./Components/PlanightHeaderImage";
+// import Pavbar from "./Pavbar";
+// import PlanightHeaderImage from "./PlanightHeaderImage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, Button } from "react-bootstrap";
-import ImageCard from "./Components/ImageCard";
-import Paragraph from "./Components/Paragraph";
-import Header from "./Components/Header";
-import Carmove from "./Components/Carmove";
+import { Button } from "react-bootstrap";
+import ImageCard from "./ImageCard";
+import Paragraph from "./Paragraph";
+// import Header from "./Header";
+import Carmove from "./Carmove";
+import { auth, provider } from "./firebase";
 
 function App() {
+  const signIn = () => {
+    auth.signInWithPopup(provider).catch((error) => alert(error.message));
+  };
   return (
     <div className="main">
-      <Pavbar></Pavbar>
+      {/*<Pavbar></Pavbar>*/}
       {/* <PlanightHeaderImage />*/}
       <div className="main__header">
         {/* <img width="500" height="200" src={Planight} alt="" />*/}
       </div>
-      <div className="main__title">
-        <Header></Header>
-      </div>
+      <div className="main__title">{/*<Header></Header>*/}</div>
 
       <div>
         <Carmove />
@@ -46,9 +48,15 @@ function App() {
 
       <div>
         <Paragraph />
-        <Paragraph />
-        <Paragraph />
-        <Paragraph />
+      </div>
+
+      <div className="buttons">
+        <Button variant="primary" size="lg" onClick={signIn}>
+          Sign Up
+        </Button>
+        <Button variant="primary" size="lg" onClick={signIn}>
+          Google Sign Up
+        </Button>
       </div>
     </div>
   );
