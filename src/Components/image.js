@@ -1,5 +1,5 @@
 import React from "react";
-import Planight from "./Planightsources/Planight.png";
+import Planight from "../Planightsources/Planight.png";
 
 function image() {
   return (

@@ -2,8 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import "holderjs";
-import Planight from "./Planightsources/Planight.png";
-import "./styles/Carmove.css";
+import Planight from "../Planightsources/Planight.png";
+import "../styles/Carmove.css";
 
 function Carmove() {
   return (

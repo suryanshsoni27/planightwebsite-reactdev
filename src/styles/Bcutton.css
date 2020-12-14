@@ -1,0 +1,12 @@
+.button {
+    padding: 30px;
+}
+
+.button__inside {
+    transition: width 2s;
+    align-items: center
+}
+
+.button__inside:hover {
+    transition-timing-function: linear;
+}
